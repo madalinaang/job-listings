@@ -24,6 +24,7 @@ export default function Job({ job }) {
           <p>{job.location}</p>
         </div>
       </div>
+      <div className="divider" />
       <div className="categories-section">
         <Filter text={job.role} />
         <Filter text={job.level} />
