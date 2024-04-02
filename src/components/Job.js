@@ -1,7 +1,7 @@
 import Pill from "./Pill";
 import Filter from "./Filter";
 
-export default function Job({ job }) {
+export default function Job({ job, addFilter }) {
   return (
     <article className={"job-card " + (job.featured && "featured")}>
       <div className="logo-section">
@@ -26,13 +26,13 @@ export default function Job({ job }) {
       </div>
       <div className="divider" />
       <div className="categories-section">
-        <Filter text={job.role} />
-        <Filter text={job.level} />
+        <Filter text={job.role} addFilter={addFilter} />
+        <Filter text={job.level} addFilter={addFilter} />
         {job.languages.map((lang) => (
-          <Filter text={lang} />
+          <Filter text={lang} addFilter={addFilter} />
         ))}
         {job.tools.map((lang) => (
-          <Filter text={lang} />
+          <Filter text={lang} addFilter={addFilter} />
         ))}
       </div>
     </article>
