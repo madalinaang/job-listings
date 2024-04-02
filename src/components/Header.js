@@ -1,5 +1,3 @@
-import desktop_img from "../images/bg-header-desktop.svg";
-import mobile_img from "../images/bg-header-mobile.svg";
 import { useMediaQuery } from "react-responsive";
 
 export default function Headers() {
@@ -11,7 +9,11 @@ export default function Headers() {
     <header className="header">
       <img
         className="background-img"
-        src={isMobileDevice ? mobile_img : desktop_img}
+        src={
+          isMobileDevice
+            ? process.env.PUBLIC_URL + "/images/bg-header-mobile.svg"
+            : process.env.PUBLIC_URL + "/images/bg-header-desktop.svg"
+        }
       />
     </header>
   );

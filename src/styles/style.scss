@@ -1,9 +1,11 @@
-@import './variables.scss';
+@import "./variables.scss";
 
+@import "./resets.scss";
 
-@import './resets.scss';
+@import "./base.scss";
 
-@import './base.scss';
-
-@import '../components/header.scss';
-
+@import "./components/header.scss";
+@import "./components/joblist.scss";
+@import "./components/job.scss";
+@import "./components/pill.scss";
+@import "./components/filter.scss";

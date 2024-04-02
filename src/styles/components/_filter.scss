@@ -1,0 +1,15 @@
+.filter {
+  background-color: $filter-background;
+  color: $color-primary;
+  font-weight: $font-weight-bold;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0.5rem 0.7rem 0.4rem 0.7rem;
+  border-radius: 0.2rem;
+
+  &:hover {
+    background-color: $color-primary;
+    color: white;
+    cursor: pointer;
+  }
+}

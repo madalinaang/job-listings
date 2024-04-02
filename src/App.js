@@ -1,11 +1,13 @@
 import "./styles/style.scss";
 import Header from "./components/Header";
+import JobList from "./components/JobList";
 
 function App() {
   return (
-    <div>
+    <main>
       <Header />
-    </div>
+      <JobList />
+    </main>
   );
 }
 

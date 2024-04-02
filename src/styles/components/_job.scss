@@ -1,0 +1,65 @@
+.job-card {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 3rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.5rem 1rem rgba(91, 164, 164, 0.3);
+}
+
+.featured {
+  border-left: 0.3rem solid $color-primary;
+}
+
+.logo-img {
+  display: block;
+}
+
+.details-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.company-name {
+  color: $color-primary;
+  font-weight: $font-weight-bold;
+  display: block;
+}
+
+.company-pills {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.pills {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.job-position {
+  font-size: 130%;
+  color: $black-green;
+  font-weight: $font-weight-bold;
+
+  &:hover {
+    color: $color-primary;
+    cursor: pointer;
+  }
+}
+
+.more-details {
+  display: flex;
+  gap: 1rem;
+  color: $gray-green;
+}
+
+.categories-section {
+  display: flex;
+  gap: 0.7rem;
+  justify-content: flex-end;
+  flex: 1;
+  flex-wrap: wrap;
+}
